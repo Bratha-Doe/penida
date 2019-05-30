@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- meta and title
+==================================================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<!-- link
+==================================================================== -->
+    <link rel="stylesheet" href="assets/scss/master.css">
+    <link rel="stylesheet" href="assets/scss/animate.css">
+    <link rel="stylesheet" href="assets/scss/grid.css">
+    <link rel="stylesheet" href="assets/font/material-icons.css">
+
 </head>
 <body>
     
+<!-- header
+==================================================================== -->
+    <!-- navbar -->
+    <nav class="aa-nav" id="nav">
+        <img class="aa-nav-icon" src="assets/img/logo2.png" />
+        <ul class="aa-nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Why Penida</a></li>
+            <li class="dropdown"><a href="#" >Destination<i class="material-icons down-nav-bar">keyboard_arrow_down</i></a></li>
+            <li><a href="#">Tips</a></li>
+        </ul>
+
+              
+    <!-- burger menu -->
+        <div class="aa-hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+          <span class="aa-icon-bar"></span>
+          <span class="aa-icon-bar"></span>
+          <span class="aa-icon-bar"></span>
+        </div>
+
+    <!-- mobile -->
+        <div class="aa-mobile-overlay">
+          <ul class="aa-mobile-nav-items">
+            <li><a href="">Home</a></li>
+            <li><a href="">Click me</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav><!-- end all nav -->
+
+    <!-- dropdown -->
+    <div class="dropdown-content">
+        <ul>
+            <li><a href="">asdsd</a></li>
+            <li><a href="">asdasdasdsa</a></li>
+            <li><a href="">adasdasd</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <i class="material-icons">face</i>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
+
+<!-- javascript
+==================================================================== -->
+    <script type="text/javascript" src="assets/js/master.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+    <!-- wow.js -->
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+
+    <!-- navbar -->
+    <script>
+      function toggleMenu() {
+        $("#hamburgerMenu").toggleClass("collapsed");  
+        $(".aa-mobile-overlay").animate({
+          height: "toggle",
+          opacity: "toggle"
+        }, 300);
+      }
+    </script>
+
+    <!-- hide nav when scroll up -->
+    <script>
+      function scrollpos(){
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function(){
+
+        var currentScrollpos = window.pageYOffset;
+        if (prevScrollpos > currentScrollpos) {
+          document.getElementById('nav').style.top = "0";
+        }else {
+          document.getElementById('nav').style.top = "-100px";
+        }
+
+        prevScrollpos = currentScrollpos;
+
+        }
+      }
+      
+      scrollpos();
+    </script>
+
 </html>

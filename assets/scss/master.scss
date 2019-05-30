@@ -1,0 +1,196 @@
+$warna :rgb(94, 139, 94);
+.container{
+    padding: 0 75%;
+}
+
+
+
+/* SCROLL BAR
+==============================================================================*/
+/* scroll */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* handle*/
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $warna;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0.4);
+}
+
+/* NAVBAR
+==============================================================================*/
+/* Navbar */
+.aa-nav {
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    overflow: hidden;
+    background: $warna;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, .15);
+    z-index: 998;
+    transition: top 900ms;
+}
+
+/* Logo image */
+.aa-nav-icon {
+    position: absolute;
+    cursor: pointer;
+    height: 45px;
+    top: 10px;
+    left: 20px;
+    display: inline;
+    padding-left: 8%;
+}
+
+/* Nav items */
+.aa-nav-items {
+    margin: 0;
+    padding-right: 20px;
+    line-height: 65px;
+    list-style: none;
+    padding-right: 8%;
+    li {
+        display:inline-block;
+        padding-left: 30px;  
+        &:nth-last-child(2){
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            &:hover {
+                color: #fff;
+            }      
+        }
+    }
+}
+.down-nav-bar{
+    position: absolute;
+    padding-top: 20px;
+}
+// dropdown
+.dropdown:hover.dropdown-content{
+    display: none;
+}
+.dropdown-content{
+    position: fixed;
+    margin-top: 57px;
+    background-color: red;
+    right: 8%;
+    display: none;
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            display: block;
+            list-style: none;
+            a{
+                display: block;
+                padding: 10px 40px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+/* Hamburger */
+.aa-icon-bar {
+    background-color: rgb(71, 71, 71);
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    z-index: 999;
+}
+.aa-hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 999 !important;
+    display: inline;
+    display: none;
+    &:hover  .aa-icon-bar {
+        background-color: $warna;
+    }
+    &:not(.collapsed){
+        .aa-icon-bar{
+            &:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            &:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+    } 
+}
+
+
+/* Mobile Overlay */
+.aa-mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    overflow: auto;
+    z-index: 998 !important;
+    display: none;
+}
+.aa-mobile-nav-items {
+    padding: 0;
+    margin: 65px 0px;
+    text-align: center;
+    list-style: none;
+    li {
+        display: block;
+        padding-top: 30px;
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+
+/* responsive navbar */
+@media screen and (max-width: 601px) {
+    .aa-hamburger-menu {
+        display: block;
+    }
+    .aa-nav-items {
+        display: none;
+    }
+}
+

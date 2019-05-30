@@ -1,0 +1,217 @@
+.container {
+  padding: 0 75%;
+}
+
+/* SCROLL BAR
+==============================================================================*/
+/* scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* handle*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5e8b5e;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* NAVBAR
+==============================================================================*/
+/* Navbar */
+.aa-nav {
+  text-align: right;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  overflow: hidden;
+  background: #5e8b5e;
+  -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+  z-index: 998;
+  -webkit-transition: top 900ms;
+  transition: top 900ms;
+}
+
+/* Logo image */
+.aa-nav-icon {
+  position: absolute;
+  cursor: pointer;
+  height: 45px;
+  top: 10px;
+  left: 20px;
+  display: inline;
+  padding-left: 8%;
+}
+
+/* Nav items */
+.aa-nav-items {
+  margin: 0;
+  padding-right: 20px;
+  line-height: 65px;
+  list-style: none;
+  padding-right: 8%;
+}
+
+.aa-nav-items li {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.aa-nav-items li:nth-last-child(2) {
+  margin-right: 20px;
+}
+
+.aa-nav-items li a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: black;
+}
+
+.aa-nav-items li a:hover {
+  color: #fff;
+}
+
+.down-nav-bar {
+  position: absolute;
+  padding-top: 20px;
+}
+
+.dropdown:hover.dropdown-content {
+  display: none;
+}
+
+.dropdown-content {
+  position: fixed;
+  margin-top: 57px;
+  background-color: red;
+  right: 8%;
+  display: none;
+}
+
+.dropdown-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content ul li {
+  display: block;
+  list-style: none;
+}
+
+.dropdown-content ul li a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger */
+.aa-icon-bar {
+  background-color: #474747;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-bottom: 4px;
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.aa-hamburger-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 999 !important;
+  display: inline;
+  display: none;
+}
+
+.aa-hamburger-menu:hover .aa-icon-bar {
+  background-color: #5e8b5e;
+}
+
+.aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+
+.aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.aa-hamburger-menu:not(.collapsed) .aa-icon-bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile Overlay */
+.aa-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: auto;
+  z-index: 998 !important;
+  display: none;
+}
+
+.aa-mobile-nav-items {
+  padding: 0;
+  margin: 65px 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.aa-mobile-nav-items li {
+  display: block;
+  padding-top: 30px;
+}
+
+.aa-mobile-nav-items li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.aa-mobile-nav-items li:hover {
+  color: red;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 601px) {
+  .aa-hamburger-menu {
+    display: block;
+  }
+  .aa-nav-items {
+    display: none;
+  }
+}
+/*# sourceMappingURL=master.css.map */
