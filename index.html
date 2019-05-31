@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PENIDA</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png" />
 <!-- link
 ==================================================================== -->
     <link rel="stylesheet" href="assets/scss/master.css">
@@ -17,62 +18,60 @@
 </head>
 <body>
     
-<!-- header
+<!-- HEADER
 ==================================================================== -->
-    <!-- navbar -->
+    <!-- NAVBAR -->
     <nav class="aa-nav" id="nav">
-        <img class="aa-nav-icon" src="assets/img/logo2.png" />
+      <a href="index.html" class="aa-nav-icon"><img  src="assets/img/logo2.png" /><span>PENIDA</span></a>
         <ul class="aa-nav-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Why Penida</a></li>
-            <li class="dropdown"><a href="#" >Destination<i class="material-icons down-nav-bar">keyboard_arrow_down</i></a></li>
+            <li class="dropdown"><a href="#" >Destination<i class="material-icons down-nav-bar">keyboard_arrow_down</i></a>
+              <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Pala Dinosors</a></li>
+                    <li><a href="#">Pantai Keren</a></li>
+                    <li><a href="#">Manta Point</a></li>
+                    <li><a href="#">Mola-mola</a></li>
+                </ul>
+            </div>
+            </li>
             <li><a href="#">Tips</a></li>
         </ul>
 
-              
-    <!-- burger menu -->
-        <div class="aa-hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
-          <span class="aa-icon-bar"></span>
-          <span class="aa-icon-bar"></span>
-          <span class="aa-icon-bar"></span>
-        </div>
-
-    <!-- mobile -->
-        <div class="aa-mobile-overlay">
-          <ul class="aa-mobile-nav-items">
-            <li><a href="">Home</a></li>
-            <li><a href="">Click me</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-
       </nav><!-- end all nav -->
 
-    <!-- dropdown -->
-    <div class="dropdown-content">
-        <ul>
-            <li><a href="">asdsd</a></li>
-            <li><a href="">asdasdasdsa</a></li>
-            <li><a href="">adasdasd</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-content container">
+        <h1>Penida Island</h1>
+        <p>Lorem ipsum dolor</p>
+        <p>Adipisci laboriosam magni nam accusantium tempore?</p>
+        <h5>Explore Now</h5>
+        <i class="material-icons">keyboard_arrow_down</i>
+      </div>
+    </div>
+    <div class="wave-header">
+      <img src="assets/img/wavedown.png" alt="">
     </div>
 
-
-
+<!-- ABOUT
+==================================================================== -->
+    <div class="container">
+      <div class="home-about">
+        <div class="subtitle">
+          <h2><span>About</span> Penida</h2>
+        </div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo laudantium ipsum animi? Natus commodi suscipit alias a. Aliquam, at! Alias vel rem dolores praesentium! Alias aliquid libero hic temporibus reprehenderit.
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eaque ex. Maxime facilis velit odio fugiat error repellendus incidunt asperiores dignissimos dolores magnam. Itaque tenetur sed fuga dolores deleniti aperiam?</h2>
+      </div>
+    </div>
 
 
 
        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <i class="material-icons">face</i>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 </body>
 
@@ -82,22 +81,10 @@
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/SmoothScroll.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/parallax.min.js"></script>
     <!-- wow.js -->
     <script type="text/javascript">
       new WOW().init();
-    </script>
-
-    <!-- navbar -->
-    <script>
-      function toggleMenu() {
-        $("#hamburgerMenu").toggleClass("collapsed");  
-        $(".aa-mobile-overlay").animate({
-          height: "toggle",
-          opacity: "toggle"
-        }, 300);
-      }
     </script>
 
     <!-- hide nav when scroll up -->
