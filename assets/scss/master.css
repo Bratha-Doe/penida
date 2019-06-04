@@ -192,9 +192,9 @@
   font-size: 22px;
 }
 
-.header-content i {
+.header-content span {
   margin-left: 40px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .wave-header img {
@@ -244,12 +244,17 @@
   float: right;
 }
 
+.home-about-content-r img {
+  width: 450px;
+  margin-top: -150px;
+}
+
 /* GAP
 ==============================================================================*/
 .home-gap {
   width: 100%;
   height: 550px;
-  background-image: url("../img/photo4.jpg");
+  background-image: url("../img/photo7.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -258,5 +263,219 @@
   width: 100%;
   height: 220px;
   position: absolute;
+}
+
+.home-gap-content {
+  position: absolute;
+  padding-top: 185px;
+  width: 100%;
+}
+
+.h-g-content-dess {
+  text-align: center;
+  color: white;
+}
+
+.h-g-content-dess img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+
+.h-g-content-dess h4 {
+  padding: 0 25%;
+}
+
+.h-g-content-dess h4 span {
+  font-size: 30px;
+}
+
+.h-g-content-dess p {
+  margin-top: 50px;
+}
+
+/* DESTINATION
+==============================================================================*/
+.home-destination {
+  padding-top: 70px;
+}
+
+.h-desti-content {
+  margin: 60px 0;
+}
+
+.h-desti-content a {
+  text-decoration: none;
+}
+
+.h-desti-content-up {
+  width: 100%;
+  display: block;
+}
+
+.h-d-c-up-dess {
+  width: 28%;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.h-d-c-up-dess:hover {
+  -webkit-box-shadow: 1px 1px 10px 0px #272727;
+          box-shadow: 1px 1px 10px 0px #272727;
+}
+
+.h-d-c-up-dess-1 {
+  background-image: url("../img/kelingking.jpg");
+}
+
+.h-d-c-up-dess-2 {
+  background-image: url("../img/angel.jpg");
+}
+
+.h-d-c-up-dess-3 {
+  background-image: url("../img/broken.jpg");
+}
+
+.h-d-c-up-dess-4 {
+  background-image: url("../img/tembeling.jpg");
+}
+
+.h-d-c-up-dess-5 {
+  background-image: url("../img/manta.jpg");
+}
+
+.h-d-c-up-dess-6 {
+  background-image: url("../img/teletubis.jpg");
+}
+
+/* FOOTER
+==============================================================================*/
+.wave-footer img {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: #272727;
+  display: block;
+}
+
+.footer-content {
+  padding-top: 130px;
+}
+
+.footer-l {
+  width: 32.33333%;
+  display: inline-block;
+}
+
+.footer-l h2 {
+  color: #5e8b5e;
+  margin-bottom: 20px;
+}
+
+.footer-l ul li {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.footer-l ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-c {
+  display: inline-block;
+  width: 33.333333%;
+}
+
+.footer-c h2 {
+  color: #5e8b5e;
+  padding-bottom: 20px;
+}
+
+.footer-c ul li {
+  color: #fff;
+  padding: 3px 0;
+}
+
+.footer-c ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-r {
+  display: inline-block;
+  width: 33.333333%;
+}
+
+.footer-r h2 {
+  color: #5e8b5e;
+  margin-bottom: 20px;
+}
+
+.footer-r h2:nth-child(even) {
+  margin-top: 20px;
+}
+
+.footer-r p {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.footer-r h3 span {
+  color: #fff;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.dark-footer {
+  width: 100%;
+  height: 55px;
+  background-color: #5e8b5e;
+  -webkit-box-shadow: 0px 2px 10px 0px black;
+          box-shadow: 0px 2px 10px 0px black;
+}
+
+.dark-footer p {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* HEADER 2 (TIPS)
+==============================================================================*/
+.header-content-2 {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.header-content-2 h5 {
+  margin-top: 70px;
+}
+
+.header-content-2 span {
+  margin: 0;
+}
+
+.wave-header-2 img {
+  margin-top: -400px;
+  width: 100%;
+  height: 250px;
+}
+
+.header-2 {
+  background-image: url("../img/trips.png");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
 }
 /*# sourceMappingURL=master.css.map */
