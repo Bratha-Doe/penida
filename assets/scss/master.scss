@@ -465,6 +465,9 @@ $warna2 : rgb(129, 170, 129);
 }
 
 // coment
+.subtitle-for-comment{
+    margin-top: 60px !important;
+}
 .comment-form {
     display: block;
     input,textarea {
@@ -531,6 +534,135 @@ $warna2 : rgb(129, 170, 129);
 }
 
 /* ==============================================================================
+KELINGKING BEACH
+==============================================================================*/
+.kelingking-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .kelingking-head-dess-1{
+        width: 40%;
+        float: left;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+}
+
+
+/* ==============================================================================
+BROKEN BEACH
+==============================================================================*/
+.broken-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .broken-head-dess-1{
+        width: 45%;
+        float: left;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+    .broken-head-dess-2{
+        width: 45%;
+        float: right;
+        .img-broken-1{
+            position: relative;
+            width: 100%;
+            // height: 300px;
+        }
+        .img-map-broken{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
+        }
+    }
+}
+.broken-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .broken-but-dess-1{
+        width: 40%;
+        float: left;
+        .img-broken-2{
+            width: 100%;
+            position: relative;
+            height: 360px;
+        }
+    }
+    .broken-but-dess-2{
+        width: 50%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+
+/* ==============================================================================
+TEMBELING
+==============================================================================*/
+.tembeling-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .tembeling-head-dess-1{
+        width: 45%;
+        float: left;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+    .tembeling-head-dess-2{
+        width: 45%;
+        float: right;
+        .img-tembeling-1{
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .img-map-tembeling{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
+        }
+    }
+}
+.tembeling-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .tembeling-but-dess-1{
+        width: 45%;
+        float: left;
+        .img-tembeling-2{
+            width: 100%;
+            position: relative;
+            height: 310px;
+        }
+    }
+    .tembeling-but-dess-2{
+        width: 45%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+.subtitle-2-for-tembeling{
+    margin-top: 20px !important;
+}
+
+/* ==============================================================================
 MANTA BAY
 ==============================================================================*/
 .header-manta{
@@ -541,7 +673,7 @@ MANTA BAY
     width: 100%;
     display: table;
     .manta-head-dess-1{
-        width: 60%;
+        width: 50%;
         float: left;
         p{
             font-size: 18px;
@@ -554,7 +686,7 @@ MANTA BAY
         float: right;
         img{
             width: 80%;
-            margin: -95px 0 0 20px;
+            //margin
             position: absolute;
         }
     }
@@ -570,5 +702,82 @@ TIPS
 
 .header-tips{
     background-image: url('../img/trips.png');
+    
 }
 
+/* ==============================================================================
+ABOUT US
+==============================================================================*/
+.header-aboutus{
+    background-image: url("../img/team2.jpg");
+    background-position-y: bottom;
+    background-size: cover;
+}
+.about-us-quo{
+    width: 70%;
+    padding: 40px 0 50px 0;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+}
+.about-us-hr{
+    margin: 40px 0;
+    border: 0.8px solid $warna;
+}
+.about-us{
+    width: 100%;
+    .about-us-sosial{
+        display: inline-block;
+        padding: 20px 0;
+        vertical-align: top;
+        a{
+            text-decoration: none;
+            color: #000;
+            &:nth-child(1){
+                color: #fb3958;
+            }
+            &:nth-child(2){
+                color: #3b5998 ;
+            }
+            &:nth-child(3){
+                color:  #1da1f2;    
+            }
+            div{
+                padding: 10px 0;
+            }
+        }
+    }
+    .about-us-img{
+        display: inline-block;
+        padding: 0 20px;
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+        }
+    }
+    .about-us-dess{
+        display: inline-block;
+        vertical-align: top;
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            margin-top: 15px;
+            font-size: 16px;
+            color: $warna;
+        }
+        p{
+            font-size: 16px;
+            color: rgb(95, 95, 95);
+        }
+    }
+    .about-us-dess-1{      
+        text-align: left
+    }
+    .about-us-dess-2{
+        text-align: right;
+    }
+}

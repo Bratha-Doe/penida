@@ -528,6 +528,10 @@
   height: 600px;
 }
 
+.subtitle-for-comment {
+  margin-top: 60px !important;
+}
+
 .comment-form {
   display: block;
 }
@@ -603,6 +607,156 @@
 }
 
 /* ==============================================================================
+KELINGKING BEACH
+==============================================================================*/
+.kelingking-head-dess {
+  width: 100%;
+  display: table;
+  padding: 20px;
+}
+
+.kelingking-head-dess .kelingking-head-dess-1 {
+  width: 40%;
+  float: left;
+}
+
+.kelingking-head-dess .kelingking-head-dess-1 p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* ==============================================================================
+BROKEN BEACH
+==============================================================================*/
+.broken-head-dess {
+  width: 100%;
+  display: table;
+  padding: 20px;
+}
+
+.broken-head-dess .broken-head-dess-1 {
+  width: 45%;
+  float: left;
+}
+
+.broken-head-dess .broken-head-dess-1 p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.broken-head-dess .broken-head-dess-2 {
+  width: 45%;
+  float: right;
+}
+
+.broken-head-dess .broken-head-dess-2 .img-broken-1 {
+  position: relative;
+  width: 100%;
+}
+
+.broken-head-dess .broken-head-dess-2 .img-map-broken {
+  position: relative;
+  height: 150px;
+  margin-top: -70px;
+  margin-left: -100px;
+}
+
+.broken-but-dess {
+  width: 100%;
+  display: table;
+  padding: 20px;
+}
+
+.broken-but-dess .broken-but-dess-1 {
+  width: 40%;
+  float: left;
+}
+
+.broken-but-dess .broken-but-dess-1 .img-broken-2 {
+  width: 100%;
+  position: relative;
+  height: 360px;
+}
+
+.broken-but-dess .broken-but-dess-2 {
+  width: 50%;
+  float: right;
+}
+
+.broken-but-dess .broken-but-dess-2 p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+/* ==============================================================================
+TEMBELING
+==============================================================================*/
+.tembeling-head-dess {
+  width: 100%;
+  display: table;
+  padding: 20px;
+}
+
+.tembeling-head-dess .tembeling-head-dess-1 {
+  width: 45%;
+  float: left;
+}
+
+.tembeling-head-dess .tembeling-head-dess-1 p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.tembeling-head-dess .tembeling-head-dess-2 {
+  width: 45%;
+  float: right;
+}
+
+.tembeling-head-dess .tembeling-head-dess-2 .img-tembeling-1 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.tembeling-head-dess .tembeling-head-dess-2 .img-map-tembeling {
+  position: relative;
+  height: 150px;
+  margin-top: -70px;
+  margin-left: -100px;
+}
+
+.tembeling-but-dess {
+  width: 100%;
+  display: table;
+  padding: 20px;
+}
+
+.tembeling-but-dess .tembeling-but-dess-1 {
+  width: 45%;
+  float: left;
+}
+
+.tembeling-but-dess .tembeling-but-dess-1 .img-tembeling-2 {
+  width: 100%;
+  position: relative;
+  height: 310px;
+}
+
+.tembeling-but-dess .tembeling-but-dess-2 {
+  width: 45%;
+  float: right;
+}
+
+.tembeling-but-dess .tembeling-but-dess-2 p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.subtitle-2-for-tembeling {
+  margin-top: 20px !important;
+}
+
+/* ==============================================================================
 MANTA BAY
 ==============================================================================*/
 .header-manta {
@@ -616,7 +770,7 @@ MANTA BAY
 }
 
 .manta-head-dess .manta-head-dess-1 {
-  width: 60%;
+  width: 50%;
   float: left;
 }
 
@@ -633,7 +787,6 @@ MANTA BAY
 
 .manta-head-dess .manta-head-dess-2 img {
   width: 80%;
-  margin: -95px 0 0 20px;
   position: absolute;
 }
 
@@ -646,5 +799,100 @@ TIPS
 ==============================================================================*/
 .header-tips {
   background-image: url("../img/trips.png");
+}
+
+/* ==============================================================================
+ABOUT US
+==============================================================================*/
+.header-aboutus {
+  background-image: url("../img/team2.jpg");
+  background-position-y: bottom;
+  background-size: cover;
+}
+
+.about-us-quo {
+  width: 70%;
+  padding: 40px 0 50px 0;
+  font-size: 22px;
+  color: #a1a1a1;
+}
+
+.about-us-hr {
+  margin: 40px 0;
+  border: 0.8px solid #5e8b5e;
+}
+
+.about-us {
+  width: 100%;
+}
+
+.about-us .about-us-sosial {
+  display: inline-block;
+  padding: 20px 0;
+  vertical-align: top;
+}
+
+.about-us .about-us-sosial a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-us .about-us-sosial a:nth-child(1) {
+  color: #fb3958;
+}
+
+.about-us .about-us-sosial a:nth-child(2) {
+  color: #3b5998;
+}
+
+.about-us .about-us-sosial a:nth-child(3) {
+  color: #1da1f2;
+}
+
+.about-us .about-us-sosial a div {
+  padding: 10px 0;
+}
+
+.about-us .about-us-img {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.about-us .about-us-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.about-us .about-us-dess {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-us .about-us-dess h1 {
+  font-size: 20px;
+}
+
+.about-us .about-us-dess h2 {
+  font-size: 20px;
+}
+
+.about-us .about-us-dess h3 {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #5e8b5e;
+}
+
+.about-us .about-us-dess p {
+  font-size: 16px;
+  color: #5f5f5f;
+}
+
+.about-us .about-us-dess-1 {
+  text-align: left;
+}
+
+.about-us .about-us-dess-2 {
+  text-align: right;
 }
 /*# sourceMappingURL=master.css.map */
