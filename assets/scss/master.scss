@@ -521,6 +521,9 @@ $warna2 : rgb(129, 170, 129);
             }
             td{ 
                 padding: 15px 10px;
+                &:nth-child(1){
+                    width: 100px;
+                }
                 img{
                    width: 50px;
                }
@@ -533,27 +536,163 @@ $warna2 : rgb(129, 170, 129);
     }
 }
 
+
+/* ==============================================================================
+WHY
+==============================================================================*/
+.header-why{
+    background-image: url("../img/why.jpg");
+    background-position-y: top;
+    background-size: cover;
+}
+.why-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+
+
 /* ==============================================================================
 KELINGKING BEACH
 ==============================================================================*/
+.header-kelingking{
+    background-image: url("../img/kelingking-2.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+}
 .kelingking-head-dess{
     width: 100%;
     display: table;
     padding: 20px;
     .kelingking-head-dess-1{
-        width: 40%;
+        width: 45%;
         float: left;
         p{
             font-size: 18px;
             text-align: justify;
         }
     }
+    .kelingking-head-dess-2{
+        width: 45%;
+        float: right;
+        .img-kelingking-1{
+            position: relative;
+            width: 100%;
+            height: 440px;
+        }
+        .img-map-kelingking{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
+        }
+    }
+}
+.kelingking-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .kelingking-but-dess-1{
+        width: 40%;
+        float: left;
+        .img-kelingking-2{
+            width: 100%;
+            position: relative; 
+            margin-top: 20px;
+            //height: 360px;
+        }
+    }
+    .kelingking-but-dess-2{
+        width: 50%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+.subtitle-2-for-kelingking{
+    margin-top: 20px !important;
 }
 
+
+
+/* ==============================================================================
+BOLLABONG
+==============================================================================*/
+.header-billabong{
+    background-image: url("../img/angel-head.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+.billabong-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .billabong-head-dess-1{
+        width: 45%;
+        float: left;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+    .billabong-head-dess-2{
+        width: 45%;
+        float: right;
+        .img-billabong-1{
+            position: relative;
+            width: 100%;
+            height: 350px;
+        }
+        .img-map-billabong{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
+        }
+    }
+}
+.billabong-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .billabong-but-dess-1{
+        width: 40%;
+        float: left;
+        .img-billabong-2{
+            width: 100%;
+            position: relative;
+            padding-top: 20px;  
+           // height: 360px;
+        }
+    }
+    .billabong-but-dess-2{
+        width: 50%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+.subtitle-2-for-billabong{
+    margin-top: 20px !important;
+}
 
 /* ==============================================================================
 BROKEN BEACH
 ==============================================================================*/
+.header-broken{
+    background-image: url("../img/broken-head.jpg");
+    background-size: cover;
+    background-position-y: top;
+}
 .broken-head-dess{
     width: 100%;
     display: table;
@@ -572,7 +711,7 @@ BROKEN BEACH
         .img-broken-1{
             position: relative;
             width: 100%;
-            // height: 300px;
+            height: 360px;
         }
         .img-map-broken{
             position: relative;
@@ -604,10 +743,18 @@ BROKEN BEACH
         }
     }
 }
+.subtitle-2-for-broken{
+    margin-top: 20px !important;
+}
 
 /* ==============================================================================
 TEMBELING
 ==============================================================================*/
+.header-tembeling{
+    background-image: url("../img/tembeling-head.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
 .tembeling-head-dess{
     width: 100%;
     display: table;
@@ -672,29 +819,119 @@ MANTA BAY
 .manta-head-dess{
     width: 100%;
     display: table;
+    padding: 20px;
     .manta-head-dess-1{
-        width: 50%;
+        width: 45%;
         float: left;
         p{
             font-size: 18px;
             text-align: justify;
-            padding-top: 20px;  
         }
     }
     .manta-head-dess-2{
-        width: 40%;
+        width: 45%;
         float: right;
-        img{
-            width: 80%;
-            //margin
-            position: absolute;
+        .img-manta-1{
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .img-map-manta{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
         }
     }
 }
-.subtitle-manta-danger{
-    margin-top: 120px;
+.manta-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .manta-but-dess-1{
+        width: 45%;
+        float: left;
+        .img-manta-2{
+            width: 100%;
+            position: relative;
+            height: 400px;
+        }
+    }
+    .manta-but-dess-2{
+        width: 45%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+.subtitle-2-for-manta{
+    margin-top: 20px !important;
 }
 
+/* ==============================================================================
+TELETUBBIES HILL
+==============================================================================*/
+.header-hill{
+    background-image: url("../img/hill-head.jpg");
+    background-size: cover;
+    background-position-y: top;
+}
+.hill-head-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .hill-head-dess-1{
+        width: 45%;
+        float: left;
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+    .hill-head-dess-2{
+        width: 45%;
+        float: right;
+        .img-hill-1{
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .img-map-hill{
+            position: relative;
+            height: 150px;
+            margin-top: -70px;
+            margin-left: -100px;
+        }
+    }
+}
+.hill-but-dess{
+    width: 100%;
+    display: table;
+    padding: 20px;
+    .hill-but-dess-1{
+        width: 45%;
+        float: left;
+        .img-hill-2{
+            width: 100%;
+            position: relative;
+            margin-top: 60px;
+           // height: 400px;
+        }
+    }
+    .hill-but-dess-2{
+        width: 45%;
+        float: right;
+        p{
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+.subtitle-2-for-hill{
+    margin-top: 20px !important;
+}
 
 /* ==============================================================================
 TIPS
@@ -702,7 +939,29 @@ TIPS
 
 .header-tips{
     background-image: url('../img/trips.png');
-    
+}
+.tips-content{
+    margin-top: 40px;
+    width: 100%;
+    h1{
+        font-size: 22px;
+        width: 70%;
+        color: rgb(95, 95, 95);
+        margin-bottom: 40px;
+    }
+    div{
+        h2{
+            font-size: 22px;
+            padding: 40px 0 10px 0;
+            span{
+                color: $warna;
+            }
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
 }
 
 /* ==============================================================================
@@ -722,6 +981,7 @@ ABOUT US
 .about-us-hr{
     margin: 40px 0;
     border: 0.8px solid $warna;
+    background-color: $warna;
 }
 .about-us{
     width: 100%;
@@ -772,6 +1032,7 @@ ABOUT US
         p{
             font-size: 16px;
             color: rgb(95, 95, 95);
+            padding-top: 5px;
         }
     }
     .about-us-dess-1{      

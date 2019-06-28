@@ -76,32 +76,35 @@
           <h3>What Is Manta Bay ?</h3>
           <h2>Manta Bay</h2>
         </div>
-        <!-- <div class="manta-head-dess">
-          <div class="manta-head-dess-1 wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
-              <p>
-                The manta snorkeling Nusa Penida was the part of our Bali holiday we were the most excited about. A close
-                encounter with these majestic creatures was definitely the highlight of our visit and now we share all the
-                information you need to know about these giant creatures, how and where you can swim with them. 
-              </p>
-              <p>
-                  Manta Bay should in fact be called Manta Bays, because the site is a succession of bays surrounded by abrupt cliffs. Certain people would call the bay at the far east, Secret Manta. The bay is shallow, and the Manta are generally visible from the surface, which determines our entry point into the water.   
-              </p>
-          </div>
-          <div class="manta-head-dess-2 wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
-              <img src="../assets/img/manta.jpg" alt="">
-          </div>
-        </div> -->
+        <div class="manta-head-dess">
+            <div class="manta-head-dess-1 wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
+              <p>The manta snorkeling Nusa Penida was the part of our Bali holiday we were the most excited about. A close
+                  encounter with these majestic creatures was definitely the highlight of our visit and now we share all the
+                  information you need to know about these giant creatures, how and where you can swim with them. </p>
+              <p>Manta Bay should in fact be called Manta Bays, because the site is a succession of bays surrounded by abrupt cliffs. Certain people would call the bay at the far east, Secret Manta. The bay is shallow, and the Manta are generally visible from the surface, which determines our entry point into the water.</p>
+            </div>
+            <div class="manta-head-dess-2 wow fadeInUp animated row" data-wow-delay="0.5s"
+                data-wow-duration="1s">
+                <img class="img-manta-1" src="../assets/img/manta2.jpg" alt="">
+                <img class="img-map-manta" src="../assets/img/mantaloc.png" alt="">
+            </div>
+        </div>
 
-        <div class="subtitle subtitle-manta-danger wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
-            <h3>Are They Dangerous ?</h3>
-            <h2>Giant manta rays in Nusa Penida</h2>
-          </div>
+        <div class="subtitle subtitle-2-for-manta wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
+          <h3>Are They Dangerous ?</h3>
+          <h2>Giant manta rays in Nusa Penida</h2>
+        </div>
+        <div class="manta-but-dess">
+            <div class="manta-but-dess-1 wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
+                <img class="img-manta-2" src="../assets/img/manta.jpg" alt="">
+            </div>
+            <div class="manta-but-dess-2 wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
+                <p>Knowing that manta rays can grow up to 23 ft (7 m) and weigh about 6600 lbs (3000 kg) makes fully understandable that many people think manta rays are dangerous. But don’t worry, in spite of their size, manta rays are completely harmless to human. Bali manta rays are Reef Manta species (Manta alfredi) that are the second-largest ray species after Oceanic Manta with an average size of 9.8-11.5 ft (3-3.5 m). They are filter feeders which means they feed on plankton, crustaceans and smaller fish, have small, non-sharp teeth only that they use to chew their food. Mantas don’t have poisonous tail stinger so it is completely safe to swim with manta rays. They have the largest brain of all bony fish and enjoy interacting with humans, so it is not a surprise that snorkelers and divers often describe their manta snorkeling as their best experience.</p>
+            </div>
+        </div>
         
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <div class="subtitle wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
+        <div class="subtitle subtitle-for-comment wow fadeInUp animated row" data-wow-delay="0.5s" data-wow-duration="1s">
             <h2>Comments</h2>
         </div>
         <div class="comment">
@@ -136,6 +139,7 @@
               <li><a href="../index.html">Home</a></li>
               <li><a href="why.html">Why Penida</a></li>
               <li><a href="tips.html">Tips</a></li>
+              <li><a href="aboout.html">About Us</a></li>
             </ul>
           </div>
           <div class="footer-c">
@@ -201,16 +205,13 @@
     <!-- comment -->
     <script>
       function render(data) {
-        var html = "<tr><td><img src='../assets/img/avatar.jpg' alt=''></td><td><h4>"+data.name+"</h6><h5>Mon Jun 03 2019</h5><p>"+data.dess+"</p></td></tr>";
+        var html = "<tr><td><img src='../assets/img/avatar.png' alt=''></td><td><h4>"+data.name+"</h6><h5>Just Now</h5><p>"+data.dess+"</p></td></tr>";
         $('#comment-dess').append(html);
       }
       
       $(document).ready(function(){
 
-        var coment = [
-          {"name": "bratha doe", "dess": "lorem ipsum dolor sit amet"},
-          {"name": "jane doe", "dess": "lorem ipsum dolor sit amet"}
-        ];
+        var coment = [];
 
         for(var i=0;i<coment.length;i++){
           render(coment[i]);
